@@ -1,0 +1,79 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 46 44% 95%;
+    --foreground: 196 41% 24%;
+
+    --card: 46 44% 97%;
+    --card-foreground: 196 41% 24%;
+
+    --popover: 46 44% 95%;
+    --popover-foreground: 196 41% 24%;
+
+    --primary: 174 59% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 73% 66%;
+    --secondary-foreground: 196 41% 24%;
+
+    --muted: 46 30% 90%;
+    --muted-foreground: 196 20% 45%;
+
+    --accent: 16 78% 61%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 42 30% 80%;
+    --input: 42 30% 80%;
+    --ring: 174 59% 39%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 196 41% 24%;
+    --sidebar-foreground: 46 44% 95%;
+    --sidebar-primary: 174 59% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 196 30% 30%;
+    --sidebar-accent-foreground: 46 44% 95%;
+    --sidebar-border: 196 20% 35%;
+    --sidebar-ring: 174 59% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cream text-charcoal;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-teal text-white px-6 py-3 rounded-md hover:bg-teal-dark transition-colors duration-300 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-sand text-charcoal px-6 py-3 rounded-md hover:bg-sand-dark transition-colors duration-300 font-medium;
+  }
+  
+  .btn-accent {
+    @apply bg-terracotta text-white px-6 py-3 rounded-md hover:bg-terracotta-dark transition-colors duration-300 font-medium;
+  }
+  
+  .card-shadow {
+    @apply shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+}
